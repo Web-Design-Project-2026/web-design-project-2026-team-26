@@ -7,18 +7,64 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="index.html" class="logo">Marquis Beauty</a>
+    <div class="top-bar">
+      <p>
+        Free shipping over 500 kr &nbsp; | &nbsp; Minimal routines &nbsp; |
+        &nbsp; Conscious beauty
+      </p>
+    </div>
+
+    <header class="site-header">
+      <div class="header-main">
+        <a href="index.html" class="logo">MARQUIS</a>
+
+        <form class="search-bar">
+          <label for="search" class="sr-only">Search products</label>
+          <input
+            id="search"
+            type="search"
+            placeholder="What are you looking for?"
+          />
+        </form>
+
+        <div class="header-icons">
+          <a href="cart.html">Cart</a>
+        </div>
+      </div>
+
+      <nav class="main-nav">
         <ul>
-          <li><a href="shop.html">Shop</a></li>
+          <li><a href="shop.html">Skincare</a></li>
+          <li><a href="shop.html">Haircare</a></li>
+          <li><a href="shop.html">Body care</a></li>
+          <li><a href="shop.html">Makeup</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="cart.html">Cart</a></li>
         </ul>
       </nav>
     </header>
-    <main></main>
-    <footer></footer>
-    <script src="script.js"></script>
+
+    <div class="announcement-bar">
+      <p>New collection – 15% off selected essentials</p>
+    </div>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <p class="eyebrow">Marquis Beauty</p>
+          <h1>Minimal beauty essentials for everyday routines.</h1>
+          <p>
+            Skincare, haircare, body care and makeup created for calm, simple
+            and intentional beauty rituals.
+          </p>
+          <a href="shop.html" class="button">Shop now</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 Marquis Beauty. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
