@@ -64,10 +64,10 @@ a {
   padding: 1.5rem 5%;
 }
 
-.logo {
-  font-family: "Open Sans", sans-serif;
-  font-size: 3rem;
-  color: #272727;
+.logo img {
+  width: 180px;
+  height: auto;
+  display: block;
 }
 
 .search-bar input {
