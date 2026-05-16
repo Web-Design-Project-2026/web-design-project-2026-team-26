@@ -278,6 +278,92 @@ a {
   margin-top: 0.3rem;
 }
 
+/* PRODUCT PAGE */
+
+.product-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+
+  padding: 5rem 5% 6rem;
+}
+
+.product-gallery img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+
+.product-info {
+  max-width: 500px;
+}
+
+.product-info h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  line-height: 1.1;
+
+  margin-bottom: 1rem;
+}
+
+.product-price {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+}
+
+.product-description {
+  margin-bottom: 2rem;
+}
+
+.product-actions {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+
+  margin-bottom: 3rem;
+}
+
+.quantity-selector {
+  display: flex;
+  align-items: center;
+
+  border: 1px solid #d8d2ca;
+}
+
+.quantity-selector button {
+  border: none;
+  background: transparent;
+
+  padding: 1rem;
+  cursor: pointer;
+
+  font-size: 1rem;
+}
+
+.quantity-selector span {
+  padding: 0 1rem;
+}
+
+.add-to-cart {
+  border: none;
+  cursor: pointer;
+}
+
+.product-details {
+  border-top: 1px solid #d8d2ca;
+
+  padding-top: 2rem;
+}
+
+.detail-item {
+  margin-bottom: 2rem;
+}
+
+.detail-item h3 {
+  font-family: "Playfair Display", serif;
+
+  margin-bottom: 0.5rem;
+}
+
 /* FOOTER */
 
 .site-footer {
