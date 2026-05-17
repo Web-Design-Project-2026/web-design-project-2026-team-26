@@ -111,6 +111,10 @@ a {
   font-weight: 500;
 }
 
+.main-nav a:hover {
+  opacity: 0.6;
+}
+
 /* ANNOUNCEMENT BAR */
 
 .announcement-bar {
@@ -162,6 +166,11 @@ a {
   padding: 0.9rem 2rem;
   border-radius: 2px;
   font-weight: 600;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.button:hover {
+  background-color: #798594;
 }
 
 /* CATEGORIES SECTION */
@@ -176,7 +185,7 @@ a {
 
 .section-heading h2 {
   font-size: clamp(2rem, 3.5vw, 3.5rem);
-  font-family: "Playfair Display", serif; /* Playfair Display", serif */
+  font-family: "Playfair Display", serif;
   font-weight: 500;
 }
 
@@ -203,6 +212,11 @@ a {
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.category-card:hover img {
+  transform: scale(1.05);
 }
 
 .category-card h3 {
@@ -211,14 +225,12 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
-
   color: white;
   font-family: "Open Sans", sans-serif;
   font-size: 1.8rem;
   font-weight: 500;
   text-align: center;
   white-space: nowrap;
-
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
 }
 
@@ -266,6 +278,11 @@ a {
   aspect-ratio: 3 / 4;
   object-fit: cover;
   margin-bottom: 1rem;
+  transition: transform 0.4s ease;
+}
+
+.product-card:hover img {
+  transform: scale(1.03);
 }
 
 .product-card h3 {
@@ -284,7 +301,6 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
-
   padding: 5rem 5% 6rem;
 }
 
@@ -301,7 +317,6 @@ a {
 .product-info h1 {
   font-size: clamp(2.5rem, 4vw, 4rem);
   line-height: 1.1;
-
   margin-bottom: 1rem;
 }
 
@@ -318,24 +333,20 @@ a {
   display: flex;
   gap: 1rem;
   align-items: center;
-
   margin-bottom: 3rem;
 }
 
 .quantity-selector {
   display: flex;
   align-items: center;
-
   border: 1px solid #d8d2ca;
 }
 
 .quantity-selector button {
   border: none;
   background: transparent;
-
   padding: 1rem;
   cursor: pointer;
-
   font-size: 1rem;
 }
 
@@ -350,7 +361,6 @@ a {
 
 .product-details {
   border-top: 1px solid #d8d2ca;
-
   padding-top: 2rem;
 }
 
@@ -360,7 +370,6 @@ a {
 
 .detail-item h3 {
   font-family: "Playfair Display", serif;
-
   margin-bottom: 0.5rem;
 }
 
@@ -507,12 +516,11 @@ a {
 }
 
 .footer-column a {
-  opacity: 0.9;
-  transition: opacity 0.2s ease;
+  opacity: 1;
 }
 
 .footer-column a:hover {
-  opacity: 1;
+  opacity: 0.8;
 }
 
 .footer-column i {
@@ -537,5 +545,69 @@ a {
   padding-top: 1.5rem;
   text-align: center;
   font-size: 0.9rem;
-  opacity: 0.8;
+  opacity: 1;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 1024px) {
+  .category-grid,
+  .product-grid,
+  .values-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .product-page,
+  .brand-story,
+  .about-content,
+  .cart-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .header-main {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .main-nav ul {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .category-grid,
+  .product-grid,
+  .values-section,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .shop-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1,
+  .shop-hero h1,
+  .about-hero h1,
+  .product-info h1 {
+    font-size: 3rem;
+  }
+
+  .product-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .cart-item {
+    grid-template-columns: 1fr;
+  }
+
+  .cart-item img {
+    width: 100%;
+  }
 }
