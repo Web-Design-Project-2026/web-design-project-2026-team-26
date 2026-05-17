@@ -35,9 +35,10 @@
         </form>
 
         <div class="header-icons">
-          <a href="cart.html">
+          <a href="cart.html" class="cart-link">
             <i class="fa-solid fa-bag-shopping"></i>
             Cart
+            <span id="cartCount" class="cart-count">0</span>
           </a>
         </div>
       </div>
@@ -82,7 +83,9 @@
               <button type="button" id="increaseQuantity">+</button>
             </div>
 
-            <button class="button add-to-cart">Add to cart</button>
+            <button class="button add-to-cart" id="addToCartButton">
+              Add to cart
+            </button>
           </div>
 
           <div class="product-details">
@@ -109,7 +112,7 @@
             <li><a href="#">Terms and Conditions</a></li>
             <li><a href="#">Privacy Policy</a></li>
             <li><a href="#">Cookies</a></li>
-            <li><a href="#">Sustainablity</a></li>
+            <li><a href="#">Sustainability</a></li>
           </ul>
         </div>
 

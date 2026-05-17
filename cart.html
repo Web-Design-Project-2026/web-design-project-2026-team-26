@@ -35,9 +35,10 @@
         </form>
 
         <div class="header-icons">
-          <a href="cart.html">
+          <a href="cart.html" class="cart-link">
             <i class="fa-solid fa-bag-shopping"></i>
             Cart
+            <span id="cartCount" class="cart-count">0</span>
           </a>
         </div>
       </div>
@@ -62,26 +63,14 @@
         <h1>Your cart</h1>
 
         <div class="cart-layout">
-          <div class="cart-items">
-            <article class="cart-item">
-              <img src="Images/Serum.png" alt="Hydrating serum" />
-
-              <div>
-                <h2>Hydrating Serum</h2>
-                <p>Skincare</p>
-                <p>349 kr</p>
-              </div>
-
-              <button class="remove-button">Remove</button>
-            </article>
-          </div>
+          <div class="cart-items" id="cartItems"></div>
 
           <aside class="cart-summary">
             <h2>Order summary</h2>
 
             <div class="summary-row">
               <span>Subtotal</span>
-              <span>349 kr</span>
+              <span id="subtotalPrice">0 kr</span>
             </div>
 
             <div class="summary-row">
@@ -91,7 +80,7 @@
 
             <div class="summary-total">
               <span>Total</span>
-              <span>349 kr</span>
+              <span id="totalPrice">0 kr</span>
             </div>
 
             <button class="button checkout-button">Checkout</button>
@@ -109,7 +98,7 @@
             <li><a href="#">Terms and Conditions</a></li>
             <li><a href="#">Privacy Policy</a></li>
             <li><a href="#">Cookies</a></li>
-            <li><a href="#">Sustainablity</a></li>
+            <li><a href="#">Sustainability</a></li>
           </ul>
         </div>
 

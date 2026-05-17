@@ -35,9 +35,10 @@
         </form>
 
         <div class="header-icons">
-          <a href="cart.html">
+          <a href="cart.html" class="cart-link">
             <i class="fa-solid fa-bag-shopping"></i>
             Cart
+            <span id="cartCount" class="cart-count">0</span>
           </a>
         </div>
       </div>
@@ -59,14 +60,25 @@
 
     <main>
       <section class="hero">
+        <img
+          src="Images/MARQUIS_hero.png"
+          alt="Marquis Beauty hero image"
+          class="hero-background"
+        />
+
+        <div class="hero-overlay"></div>
+
         <div class="hero-content">
           <p class="eyebrow">Marquis Beauty</p>
+
           <h1>Minimal beauty essentials for everyday routines.</h1>
+
           <p>
             Skincare, haircare, body care and makeup created for calm, simple
             and intentional beauty rituals.
           </p>
-          <a href="shop.html" class="button">Shop now</a>
+
+          <a href="shop.html" class="button"> Shop now </a>
         </div>
       </section>
 
@@ -77,25 +89,25 @@
         </div>
 
         <div class="category-grid">
-          <article class="category-card">
+          <a href="shop.html" class="category-card">
             <img src="Images/MARQUIS_skincare.png" alt="Skincare products" />
             <h3>SKINCARE</h3>
-          </article>
+          </a>
 
-          <article class="category-card">
+          <a href="shop.html" class="category-card">
             <img src="Images/MARQUIS_haircare.png" alt="Haircare products" />
             <h3>HAIRCARE</h3>
-          </article>
+          </a>
 
-          <article class="category-card">
+          <a href="shop.html" class="category-card">
             <img src="Images/MARQUIS_bodycare.png" alt="Body care products" />
             <h3>BODY CARE</h3>
-          </article>
+          </a>
 
-          <article class="category-card">
+          <a href="shop.html" class="category-card">
             <img src="Images/MARQUIS_makeup.png" alt="Makeup products" />
             <h3>MAKEUP</h3>
-          </article>
+          </a>
         </div>
       </section>
     </main>
@@ -109,7 +121,7 @@
             <li><a href="#">Terms and Conditions</a></li>
             <li><a href="#">Privacy Policy</a></li>
             <li><a href="#">Cookies</a></li>
-            <li><a href="#">Sustainablity</a></li>
+            <li><a href="#">Sustainability</a></li>
           </ul>
         </div>
 
