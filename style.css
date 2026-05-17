@@ -438,6 +438,44 @@ a {
   cursor: pointer;
 }
 
+/* ABOUT PAGE */
+
+.about-hero {
+  padding: 5rem 5% 3rem;
+}
+
+.about-hero h1 {
+  max-width: 800px;
+  font-size: clamp(2.5rem, 4vw, 4.5rem);
+  line-height: 1.1;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+  padding: 2rem 5% 5rem;
+}
+
+.about-content h2,
+.values-section h3 {
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.values-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  padding: 0 5% 6rem;
+}
+
+.values-section article {
+  background-color: #efeae0;
+  padding: 2rem;
+}
+
 /* FOOTER */
 
 .site-footer {
