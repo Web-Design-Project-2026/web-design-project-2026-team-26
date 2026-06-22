@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MARQUIS Beauty</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="icon" type="image/png" href="Images/MARQUIS_favicon.png" />
+  </head>
+  <body>
+    <div class="top-bar">
+      <p>
+        Free shipping &nbsp; | &nbsp; Minimal routines &nbsp; | &nbsp; Conscious
+        beauty
+      </p>
+    </div>
+
+    <header class="site-header">
+      <div class="header-main">
+        <a href="index.html" class="logo">
+          <img src="Images/MARQUIS_logo.png" alt="Marquis Beauty logo" />
+        </a>
+
+        <form class="search-bar">
+          <label for="search" class="sr-only">Search products</label>
+          <input
+            id="search"
+            type="search"
+            placeholder="What are you looking for?"
+          />
+        </form>
+
+        <div class="header-icons">
+          <a href="cart.html" class="cart-link">
+            <i class="fa-solid fa-bag-shopping"></i>
+            Cart
+            <span id="cartCount" class="cart-count">0</span>
+          </a>
+        </div>
+      </div>
+
+      <nav class="main-nav">
+        <ul>
+          <li><a href="shop.html">Skincare</a></li>
+          <li><a href="shop.html">Haircare</a></li>
+          <li><a href="shop.html">Body care</a></li>
+          <li><a href="shop.html">Makeup</a></li>
+          <li><a href="about.html">Our story</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="announcement-bar">
+      <p>New collection – 15% off selected essentials</p>
+    </div>
+
+    <main>
+      <section class="product-page">
+        <div class="product-gallery">
+          <img src="Images/Serum.png" alt="Hydrating serum" />
+        </div>
+
+        <div class="product-info">
+          <p class="eyebrow">Skincare</p>
+
+          <h1>Hydrating Serum</h1>
+
+          <p class="product-price">349 kr</p>
+
+          <p class="product-description">
+            A lightweight hydrating serum designed to restore moisture,
+            strengthen the skin barrier and create a healthy natural glow.
+          </p>
+
+          <div class="product-actions">
+            <div class="quantity-selector">
+              <button type="button" id="decreaseQuantity">-</button>
+              <span id="quantityValue">1</span>
+              <button type="button" id="increaseQuantity">+</button>
+            </div>
+
+            <button class="button add-to-cart" id="addToCartButton">
+              Add to cart
+            </button>
+          </div>
+
+          <div class="product-details">
+            <div class="detail-item">
+              <h3>Benefits</h3>
+              <p>Hydrating, soothing and lightweight.</p>
+            </div>
+
+            <div class="detail-item">
+              <h3>Ingredients</h3>
+              <p>Niacinamide, hyaluronic acid and oat extract.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div class="footer-column">
+          <h3>Information</h3>
+
+          <ul>
+            <li><a href="#">Terms and Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Cookies</a></li>
+            <li><a href="#">Sustainability</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Customer Service</h3>
+
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Shipping & Returns</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Follow Us</h3>
+
+          <ul>
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+                Instagram
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-tiktok"></i>
+                TikTok
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-pinterest-p"></i>
+                Pinterest
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-youtube"></i>
+                YouTube
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Payment & Delivery</h3>
+
+          <div class="payment-icons">
+            <img src="Images/Visa_icon.png" alt="Visa payment" />
+
+            <img src="Images/Mastercard_icon.png" alt="Mastercard payment" />
+
+            <img src="Images/Klarna_icon.png" alt="Klarna payment" />
+
+            <img src="Images/Postnord_icon.png" alt="PostNord delivery" />
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Marquis Beauty. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
